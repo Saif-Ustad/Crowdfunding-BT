@@ -1,0 +1,63 @@
+
+
+.requestCard {
+    height: 300px;
+    padding: 30px 15px;
+    border-radius: 15px;
+    background: #1C1C24;
+    color: #fff;
+    position: relative;
+
+    .floating_request_count {
+        width: 50px;
+        height: 50px;
+        background: #4F4F4F;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top:-25px;
+        left: 100px;
+        
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 8px;
+    }
+    p {
+        font-size: 12px;
+        font-weight: 300;
+        margin-bottom: 25px;
+    }
+    .amount_and_count {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        h6 {
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 8px;
+            margin-top: 20px;
+        }
+    }
+
+    .approve_and_finalize_btn {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        div {
+            // width: 99px;
+            // height: 28px;
+            background: #7A1FC2;
+            padding: 0.8vh 2.4vh;
+            border-radius: 10px;
+            cursor: pointer;
+            &:hover {
+                background: #550e90;
+            }
+        }
+    }
+}

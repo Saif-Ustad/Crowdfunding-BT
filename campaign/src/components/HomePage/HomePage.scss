@@ -1,0 +1,100 @@
+.homeSection {
+    width: 100%;
+    padding:20px;
+    background: #101015;
+    min-height: 100vh;
+  
+    .container {
+        max-width: 1600px;
+        margin: 0 auto;
+
+        .totalCampaigns_and_filters {
+            color: #FFF;
+            font-size: 18px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            gap: 60px;
+
+            .filters {
+                float: left;
+                overflow: hidden;
+
+                &:hover {
+                    .dropbtn {
+                        border-radius: 10px 10px 0px 0px;
+                    }
+                    
+                }
+
+                .dropbtn {
+                    background: #1C1C24;
+                    padding: 10px 20px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    
+                }
+                
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #1C1C24;
+                    border-radius: 0px 10px 10px 10px;
+                    min-width: 240px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 1;
+
+                    h6 {
+                        float: none;
+                        padding: 12px 16px;
+                        display: block;
+                        color: #FFF;
+                        font-size: 14px;
+                        font-weight: 400;
+                        &:hover {
+                            background-color: #4F4F4F;
+                            cursor: pointer;
+                        
+                        }
+                        
+                    }      
+                }
+                .dropdown-content.invisible {
+                    display: none;
+                }
+                  
+            
+                &:hover  {
+                    .dropdown-content {
+                        display: block;
+                    }  
+                } 
+            }
+        }
+        
+        .hero {
+            display: grid;
+            grid-template-columns: 15% 70% 15%;
+            align-items: center;
+            // margin-top: 50px;
+            min-height: calc(100vh - 100px);
+        
+            .campaings {
+                margin-top: 20px;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(240px, 260px));
+                grid-template-rows: repeat(auto-fit, minmax(300px, 320px));
+                gap: 25px;
+                max-height: 75vh;
+                min-height: 75vh;
+                overflow:scroll;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+
+            }
+        } 
+       
+    }
+}

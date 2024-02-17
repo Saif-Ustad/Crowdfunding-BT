@@ -1,0 +1,80 @@
+.sideNavbar_section {
+    width: 66px;
+    height: 650px;
+    border-radius: 10px;
+    background: #1C1C24;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: width 0.3s;
+    z-index: 10;
+
+    &:hover {
+        width: 280px;
+    }
+
+    .item {
+        display: flex;
+
+        .item_icon {
+            padding: 10px 12px;
+
+            svg {
+                color: #C0BCBC;
+                font-size: 28px;
+            }
+
+            &.active {
+                svg {
+                  color: #2ECC40;
+                }
+              }
+
+            &:hover {
+                border-radius: 10px;
+                background: #4F4F4F;
+                svg {
+                    color: #2ECC40;
+                }
+                
+            }
+
+        }
+
+        span {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFF;
+            font-size: 20px;
+            font-weight: 400;
+            opacity: 0;
+            transition: opacity 0.3s;
+            &:hover {
+                color:#2ECC40;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    &:hover span {
+        opacity: 1;
+    }
+
+    .up {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .active {
+        border-radius: 10px;
+        background: #4F4F4F;
+                
+    }
+
+}
